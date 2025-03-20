@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="vistas/dist/css/adminlte.css">
 
   <!-- jQuery -->
-    <script src="vistas/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="vistas/dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <!--script src="vistas/dist/js/demo.js"></script-->
+  <script src="vistas/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="vistas/dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <!--script src="vistas/dist/js/demo.js"></script-->
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -28,9 +28,9 @@
 
 </div>
 
-    <?php
-        include "modulos/cabezote.php";
-        include "modulos/menu.php";
-        include "modulos/inicio.php";
-        include "modulos/footer.php";
-    ?>
+<?php
+    include "modulos/cabezote.php";
+    include "modulos/menu.php";
+    include "modulos/inicio.php";
+    include "modulos/footer.php";
+?>
