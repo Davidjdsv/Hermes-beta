@@ -34,10 +34,10 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+              with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+          <a href="inicio" class="nav-link">
+            <i class="nav-icon fa-solid fa-house"></i>
             <p>
               Inicio
             </p>
@@ -46,7 +46,7 @@
 
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-copy"></i>
+            <i class="nav-icon fas fa-user-alt"></i>
             <p>
               Usuarios
               <i class="fas fa-angle-left right"></i>
@@ -55,13 +55,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../layout/top-nav.html" class="nav-link">
+              <a href="usuarios" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Usuarios</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../layout/top-nav-sidebar.html" class="nav-link">
+              <a href="permisos" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Permisos</p>
               </a>
@@ -70,7 +70,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-desktop"></i>
             <p>
               Equipos
               <i class="right fas fa-angle-left"></i>
@@ -78,13 +78,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../charts/chartjs.html" class="nav-link">
+              <a href="inventario" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Inventario</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../charts/flot.html" class="nav-link">
+              <a href="recepcion-traspaso" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Recepción/Traspaso</p>
               </a>
@@ -93,7 +93,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tree"></i>
+            <i class="nav-icon fas fa-folder"></i>
             <p>
               Solicitudes
               <i class="fas fa-angle-left right"></i>
@@ -101,14 +101,14 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../UI/general.html" class="nav-link">
+              <a href="reservas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Reservas</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
+              <a href="inmediatas" class="nav-link">
+                <i class="fas fa-undo-alt"></i>
                 <p>Inmediatas</p>
               </a>
             </li>
@@ -116,7 +116,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-edit"></i>
+            <i class="nav-icon fas fa-clipboard-check"></i>
             <p>
               Autorizar
               <i class="fas fa-angle-left right"></i>
@@ -124,13 +124,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../forms/general.html" class="nav-link">
+              <a href="autorizaciones" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Autorizaciones</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../forms/advanced.html" class="nav-link">
+              <a href="vencidas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Solicitudes Vencidas</p>
               </a>
@@ -148,7 +148,7 @@
 
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon far fa-envelope"></i>
+            <i class="nav-icon fas fa-sign-out-alt"></i>
             <p>
               Salidas
             </p>

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Theme style -->
   <link rel="stylesheet" href="vistas/dist/css/adminlte.css">
 
@@ -46,7 +47,8 @@
         $_GET["ruta"] == "recepcion-traspaso" ||
         $_GET["ruta"] == "reportes" ||
         $_GET["ruta"] == "reservas" ||
-        $_GET["ruta"] == "salir" ||
+        $_GET["ruta"] == "inmediatas" ||
+        $_GET["ruta"] == "vencidas" ||
         $_GET["ruta"] == "salidas"){
         include "modulos/".$_GET["ruta"].".php";
       } else {
