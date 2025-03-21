@@ -31,6 +31,28 @@
 <?php
     include "modulos/cabezote.php";
     include "modulos/menu.php";
-    include "modulos/inicio.php";
-    include "modulos/footer.php";
+    // include "modulos/inicio.php";
+    // include "modulos/footer.php";
+
+    if(isset($_GET["ruta"])){
+      if($_GET["ruta"] == "inicio" ||
+        $_GET["ruta"] == "usuarios" ||
+        $_GET["ruta"] == "permisos" ||
+        $_GET["ruta"] == "inventario" ||
+        $_GET["ruta"] == "inmediata" ||
+        $_GET["ruta"] == "recepcion" ||
+        $_GET["ruta"] == "autorizaciones" ||
+        $_GET["ruta"] == "devoluciones" ||
+        $_GET["ruta"] == "recepcion-traspaso" ||
+        $_GET["ruta"] == "reportes" ||
+        $_GET["ruta"] == "reservas" ||
+        $_GET["ruta"] == "salir" ||
+        $_GET["ruta"] == "salidas"){
+        include "modulos/".$_GET["ruta"].".php";
+      } else {
+        include "modulos/error404.php";
+      }
+    } else {
+      include "modulos/footer.php";
+    }
 ?>
