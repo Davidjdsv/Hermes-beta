@@ -1,25 +1,6 @@
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Salir</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Salir</a></li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
+<?php
 
-    <!-- Main content -->
-    <section class="content">
+    session_destroy();
+    echo '<script>window.location = "ingreso";</script>';
 
-    </section>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+?>

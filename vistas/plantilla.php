@@ -1,5 +1,12 @@
+<?php
+
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,38 +30,49 @@
   <!--script src="vistas/dist/js/demo.js"></script-->
 </head>
 
-<body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
+<body class="hold-transition sidebar-mini login-page">
 
-</div>
+  <?php
 
-<?php
-    include "modulos/cabezote.php";
-    include "modulos/menu.php";
-    // include "modulos/inicio.php";
-    // include "modulos/footer.php";
+    if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok") {
+      echo '<script>
+      document.addEventListener("DOMContentLoaded", function(){
+          document.body.classList.remove("login-page");
+      });
+      </script>';
 
-    if(isset($_GET["ruta"])){
-      if($_GET["ruta"] == "inicio" ||
-        $_GET["ruta"] == "usuarios" ||
-        $_GET["ruta"] == "permisos" ||
-        $_GET["ruta"] == "inventario" ||
-        $_GET["ruta"] == "inmediata" ||
-        $_GET["ruta"] == "recepcion" ||
-        $_GET["ruta"] == "autorizaciones" ||
-        $_GET["ruta"] == "devoluciones" ||
-        $_GET["ruta"] == "recepcion-traspaso" ||
-        $_GET["ruta"] == "reportes" ||
-        $_GET["ruta"] == "reservas" ||
-        $_GET["ruta"] == "inmediatas" ||
-        $_GET["ruta"] == "vencidas" ||
-        $_GET["ruta"] == "salidas"){
-        include "modulos/".$_GET["ruta"].".php";
-      } else {
-        include "modulos/error404.php";
+      echo "<div class='wrapper'>";
+      include "modulos/cabezote.php";
+      include "modulos/menu.php";
+
+      if (isset($_GET["ruta"])) {
+        if (
+          $_GET["ruta"] == "inicio" ||
+          $_GET["ruta"] == "usuarios" ||
+          $_GET["ruta"] == "permisos" ||
+          $_GET["ruta"] == "inventario" ||
+          $_GET["ruta"] == "inmediata" ||
+          $_GET["ruta"] == "recepcion" ||
+          $_GET["ruta"] == "autorizaciones" ||
+          $_GET["ruta"] == "devoluciones" ||
+          $_GET["ruta"] == "recepcion-traspaso" ||
+          $_GET["ruta"] == "reportes" ||
+          $_GET["ruta"] == "reservas" ||
+          $_GET["ruta"] == "inmediatas" ||
+          $_GET["ruta"] == "vencidas" ||
+          $_GET["ruta"] == "salir" ||
+          $_GET["ruta"] == "salidas") {
+          include "modulos/" . $_GET["ruta"] . ".php";
+        } else {
+          include "modulos/error404.php";
+        }
       }
-    } else {
-      include "modulos/footer.php";
-    }
-?>
+        include "modulos/footer.php";
+        echo "</div>";
+      } else {
+        include "modulos/login.php";
+      }
+
+  ?>
+</body>
+</html>
