@@ -36,38 +36,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Sede Central</td>
-                            <td>Avenida Principal 123</td>
-                            <td>Oficina principal de la empresa</td>
-                            <td><button type="button" class="btn btn-block btn-success btn-xs">Activo</button></td>
-                            <td><button class=""><i data-toggle="modal" data-target="#modalEditar" class="fa-solid fa-pen-to-square"></i></button></td>
-                        </tr>
-                    </tbody>
-                    <?php
-                    
+                        <?php
+                        
                         $item = null;
                         $valor = null;
                         $sedes = ControladorSedes::ctrMostrarSedes($item, $valor);
-
                         foreach ($sedes as $key => $value) {
                             echo '<tr>
-                                <td>' . $value["id_sede"] . '</td>
+                                <td>' . ($key + 1) . '</td>
                                 <td>' . $value["nombre_sede"] . '</td>
                                 <td>' . $value["direccion"] . '</td>
                                 <td>' . $value["descripcion"] . '</td>
+                                
                                 <td>';
-                                if ($value["estado"] == "activa") {
-                                    echo '<button class>Activo</button>';
+                                if ($value["estado"] == "Activa") {
+                                    echo '<button class="btn btn-success btn-xs btnActivarSede" idSede="'.$value["id_sede"].'" estadoSede="Inactiva">Activa</button>';
                                 } else {
-                                    echo '<button class>Inactivo</button>';
+                                    echo '<button class="btn btn-danger btn-xs btnActivarSede" idSede="'.$value["id_sede"].'" estadoSede="Activa">Inactivo</button>';
                                 }
-                                echo '<td><button class="btn btn-default" data-toggle="modal" data-target="#editarModal"><i class="fas fa-edit"></i></button></td>
+                                echo '<td><button class="btn btn-default" data-toggle="modal" data-target="#modalEditar"><i class="fas fa-edit"></i></button></td>
                                 </tr>';
                         }
-                    
-                    ?>
+                        ?>
+                    </tbody>
                 </table>
             </div>
             <!-- /.card-body -->
