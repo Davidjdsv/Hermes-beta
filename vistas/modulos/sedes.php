@@ -54,7 +54,9 @@
                                 } else {
                                     echo '<button class="btn btn-danger btn-xs btnActivarSede" idSede="'.$value["id_sede"].'" estadoSede="Activa">Inactivo</button>';
                                 }
-                                echo '<td><button class="btn btn-default" data-toggle="modal" data-target="#modalEditar"><i class="fas fa-edit"></i></button></td>
+                                echo '<td>
+                                        <button class="btn btn-default" data-toggle="modal" data-target="#modalEditar"><i class="fas fa-edit"></i></button>
+                                    </td>
                                 </tr>';
                         }
                         ?>
