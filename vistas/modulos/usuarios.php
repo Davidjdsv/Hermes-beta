@@ -18,7 +18,37 @@
 
     <!-- Main content -->
     <section class="content">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="tblUsuarios" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id Usuario</th>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Usuario</th>
+                            <th>Clave</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        
 
+                        
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
     </section>
     <!-- /.content -->
 </div>
