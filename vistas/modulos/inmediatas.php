@@ -16,7 +16,35 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- Main content -->
-    <section class="content"></section>
+    <section class="content">
+    <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Traspasos</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="tblInmediatas" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Identificación</th>
+                            <th>Nombre Rol</th>
+                            <th>Ficha</th>
+                            <th>Fecha</th>
+                            <th>Placa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        
+                            
+                        
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+    </div>
+    </section>
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

@@ -20,7 +20,7 @@
     <section class="content">
     <div class="card">
             <div class="card-header">
-                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                <h3 class="card-title">Inventario</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -47,7 +47,7 @@
                 </table>
             </div>
             <!-- /.card-body -->
-        </div>
+    </div>
     </section>
     <!-- /.content -->
 </div>

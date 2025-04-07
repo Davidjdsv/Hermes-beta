@@ -18,7 +18,36 @@
 
     <!-- Main content -->
     <section class="content">
-
+    <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Traspasos</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="tblTraspasos" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id Usuario</th>
+                            <th>N# Serie</th>
+                            <th>Marca</th>
+                            <th>Fecha Ingreso</th>
+                            <th>Estado</th>
+                            <th>Cuentadante</th>
+                            <th>A. Cuentadante</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        
+                            
+                        
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+    </div>
     </section>
     <!-- /.content -->
 </div>
